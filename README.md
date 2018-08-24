@@ -91,6 +91,6 @@ constraint-satisfaction-solver/python/$ PYTHONPATH=. python csp_solver/src/map/e
 - **Dynamic Map (Python):**
 
 <p align="center">
-  <img src="./img/uk_solution.svg" width="70%">
+  <img src="./img/uk_solution.svg" width="90%">
 </p>
   
