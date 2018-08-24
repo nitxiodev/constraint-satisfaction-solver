@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+    id 'nebula.lint' version '9.3.4'
+}
+
+task run_sudoku(type: JavaExec) {
+    main = 'sudoku.example'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task run_sudoku_scraping(type: JavaExec) {
+    main = 'sudoku.example_scraping'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task run_map(type: JavaExec) {
+    main = 'map.example'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+
+allprojects {
+    apply plugin: 'nebula.lint'
+    gradleLint.rules = ['unused-dependency'] // add as many rules here as you'd like
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'sudoku.example_scraping'
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+group 'com.nitxiodev.solvers'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+//    jcenter()
+}
+
+dependencies {
+    compile 'org.seleniumhq.selenium:selenium-api:3.14.0'
+    compile 'org.seleniumhq.selenium:selenium-firefox-driver:3.14.0'
+}
