@@ -23,7 +23,7 @@ Implementation based on pseudocode of the book `Artificial Intelligence: A Moder
   - Implementation of a utility that loads geospatial data to paint the result on a real map, using GeoPandas and Matplotlib with GeoJSON data (**only Python version**).
 
 ## Version differences
-The code written in Java is just a'port' of the python code. Both implement the same functionality except on the Java version, which doesn't make use of geospatial data to display the result on a real map.
+The code written in Java is just a *port* of the python code. Both implement the same functionality except on the Java version, which doesn't make use of geospatial data to display the result on a real map.
 
 # How to install (Java Version)
 You must have `gradle` [installed](https://gradle.org/install/) in order to run this version of csp solvers. Once installed, you can run one of these tasks in order to see the results:
