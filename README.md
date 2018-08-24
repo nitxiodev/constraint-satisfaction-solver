@@ -59,3 +59,38 @@ constraint-satisfaction-solver/python/$ PYTHONPATH=. python csp_solver/src/sudok
 ```bash
 constraint-satisfaction-solver/python/$ PYTHONPATH=. python csp_solver/src/map/example.py # run map coloring problem for UK map. 
 ```
+
+# Screenshots & Outputs
+- **Sudoku (Java and Python output are equal):**
+
+| | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
+| **A** | 2 | 1 | 3 | 5 | 9 | 8 | 4 | 7 | 6 | 
+| **B** | 7 | 6 | 9 | 4 | 1 | 3 | 8 | 5 | 2 | 
+| **C** | 8 | 4 | 5 | 2 | 6 | 7 | 1 | 3 | 9 | 
+| **D** | 6 | 2 | 7 | 8 | 3 | 9 | 5 | 1 | 4 | 
+| **E** | 9 | 5 | 8 | 1 | 2 | 4 | 7 | 6 | 3 | 
+| **F** | 1 | 3 | 4 | 7 | 5 | 6 | 9 | 2 | 8 | 
+| **G** | 3 | 9 | 1 | 6 | 8 | 5 | 2 | 4 | 7 | 
+| **H** | 4 | 8 | 2 | 3 | 7 | 1 | 6 | 9 | 5 | 
+| **I** | 5 | 7 | 6 | 9 | 4 | 2 | 3 | 8 | 1 | 
+  
+`RAW SUDOKU [Evil]: 003500400000400050000060109020009004908000703100700020301080000080001000006002300 (0,010s)`
+
+- **Australian Map (Java):**
+
+```bash
+[Q] = red
+[NSW] = blue
+[T] = red
+[V] = red
+[NT] = blue
+[WA] = red
+[SA] = green
+```
+- **Dynamic Map (Python):**
+
+<p align="center">
+  <img src="./img/uk_solution.svg" width="70%">
+</p>
+  
