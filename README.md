@@ -2,7 +2,7 @@
 Implementation based on pseudocode of the book `Artificial Intelligence: A Modern Approach (3rd edition)`.
 
 # Prerequisites
-- Selenium Webdriver [Geckodriver](https://github.com/mozilla/geckodriver/releases), in order to get sudoku from remote sources. To install it:
+- Selenium Webdriver [Geckodriver](https://github.com/mozilla/geckodriver/releases), in order to get sudokus from remote sources. To install it:
 
   ```bash
   $ tar -xvzf geckodriver-vX.YY.Z-linux64.tar.gz # X.YY.Z at current time is 0.21.0
