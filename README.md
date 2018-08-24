@@ -26,7 +26,7 @@ Implementation based on pseudocode of the book `Artificial Intelligence: A Moder
 The code written in Java is just a'port' of the python code. Both implement the same functionality except on the Java version, which doesn't make use of geospatial data to display the result on a real map.
 
 # How to install (Java Version)
-You must have `gradle` installed in order to run this version of csp solvers. Once installed, you can run one of these tasks in order to see the results:
+You must have `gradle` [installed](https://gradle.org/install/) in order to run this version of csp solvers. Once installed, you can run one of these tasks in order to see the results:
 
 ```bash
 constraint-satisfaction-solver/java/csp$ gradle run_sudoku  # run sudoku example with fixed sudoku boards.
@@ -41,7 +41,7 @@ constraint-satisfaction-solver/java/csp$ gradle run_map  # run map coloring prob
 # How to install & Run (Python Version)
 
 ```bash
-constraint-satisfaction-solver/python/csp_solver$ pip install -r requirements.txt
+constraint-satisfaction-solver/python/$ pip install -r csp_solver/requirements.txt
 ```
 
 ## Map Configuration
