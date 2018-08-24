@@ -102,3 +102,5 @@ constraint-satisfaction-solver/python/$ PYTHONPATH=. python csp_solver/src/map/e
   <img src="./img/uk_solution.svg" width="90%">
 </p>
   
+# Acknowledgement
+- Geospatial data has been downloaded from [Naturalearthdata](https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_1_states_provinces.zip)
