@@ -45,7 +45,7 @@ constraint-satisfaction-solver/python/$ pip install -r csp_solver/requirements.t
 ```
 
 ## Map Configuration
-The example is designed to solve the problem of colouring maps on the map of the United Kingdom. In order to change the country, you must find the following code:
+The example is designed to solve the problem of colouring maps on the map of the United Kingdom. In order to change the country, you must find the following code on [example.py](nitxiodev/constraint-satisfaction-solver/blob/master/python/csp_solver/src/map/example.py) file:
 
 ```python
   input_data = {
