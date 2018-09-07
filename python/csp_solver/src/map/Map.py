@@ -4,10 +4,10 @@ from csp_solver.src.csp.CSP import CSP, UNASSIGNED
 class Map(CSP):
     def __init__(self, geo_data, input_data, colors, variable_heuristic, domain_heuristic):
         country, key = input_data.get('country'), input_data.get('key')
-        self._geo = geo_data[geo_data[key] == country][['name', 'geometry']]
+        self._geo = geo_data[geo_data[key] == country][['gn_name', 'geometry']]
         self._geo['neighbors'] = self._geo['geometry'].apply(
-            lambda x: self._geo[self._geo['geometry'].touches(x)].name.tolist())
-        self._geo.index = self._geo.name
+            lambda x: self._geo[self._geo['geometry'].touches(x)].gn_name.tolist())
+        self._geo.index = self._geo.gn_name
         self._data = self._geo[['neighbors']].T.to_dict(orient='list')
 
         map_domains = {key: colors[:] for key in self._data}
