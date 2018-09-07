@@ -19,11 +19,11 @@ if __name__ == '__main__':
     geo_data['admin'] = geo_data['admin'].apply(lambda x: x.lower())
 
     input_data = {
-        'country': 'republic of serbia'.lower(),  # or 'ESP'....
+        'country': 'united kingdom'.lower(),  # or 'ESP'....
         'key': 'admin'  # ....with 'adm0_a3'
     }
     s = Map(geo_data, input_data, list(COLORS.keys()), 'mrv', 'lcv')
-    print s.neighbors
+
     if s.backtracking_search():
         solution = {key: COLORS[s.variables[key]] for key in s.variables}
         df = pd.DataFrame.from_dict(solution, orient='index')
